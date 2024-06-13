@@ -359,3 +359,55 @@ footer {
   background-color: #260F1C;
   max-height: 100px;
 }
+
+/* media queries */
+
+@media(max-width: 940px) {
+
+  #portfolio .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width: 750px) {
+
+  #home .container {
+      grid-template-columns: 1fr;
+      grid-column-gap: 0px;
+      justify-items: center;
+  }
+
+  .headshot img {
+      margin-bottom: 40px;
+  }
+
+  .links-column {
+      margin-top: 45px;
+      width: 100%;
+      justify-items: center;
+  }
+
+  .button {
+      width: 50%;
+      min-width: 450px;
+  }
+
+  #about .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cat-pc {
+      margin-top: 10px;
+      margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 640px) {
+
+  #portfolio .container {
+      grid-template-columns: 1fr;
+  }
+
+}

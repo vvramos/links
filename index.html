@@ -1,6 +1,6 @@
-My link in bio
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,9 @@ My link in bio
     body {
       padding-top: 40px;
       padding-bottom: 40px;
+      background-color: #004643;
+      display: flex;
+      justify-content: center;
     }
 
     .headshot {
@@ -26,78 +29,103 @@ My link in bio
       object-fit: cover;
     }
 
-    body {
-      background-color: #004643;
-    }
-
     .name {
       color: #fffffe;
+      display: flex;
+      justify-content: center;
     }
 
     .small-icons a {
       color: #fffffe;
       text-decoration: none;
+      padding: 5px;
     }
 
-    .link {
+    .links {
       background-color: #f9bc60;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
 
-    .link a {
+    .links a {
       color: #001e1d;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
-</style>    
 
-  </style>
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>    
   
 </head>
 <body>
-  <div class="headshot">
-    <img class="headshot" src="images/ViviRamos.jpg" alt="Vivi Ramos headshot">
-  </div>
+  <div class ="items">
+    <div class="banner">
+      <img class="headshot" src="images/ViviRamos.jpg" alt="Vivi Ramos headshot">
+    </div>
 
-  <div class="name">
-    Vivi Ramos
-  </div>
+    <div class="name">
+      Vivi Ramos
+    </div>
 
-  <div class="small-icons">
-    <a href="https://www.linkedin.com/" target="_blank"><img src="/images/icons/linkedin-logo-fill.svg" 
-      alt="LinkedIn profile."/></a>
-    <a href="https://x.com/" target="_blank"><img src="/images/icons/twitter-logo-fill.svg" 
-      alt="Twitter profile."/></a>
-    <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram-logo-fill.svg" 
-      alt="Instagram profile."/></a>
-    <a href="mailto:vivianalizramos@gmail.com" target="_blank"><img src="/images/icons/envelope-fill.svg" 
-      alt="Email."/></a>
-  </div>
+    <div class="small-icons">
+      <a href="https://www.linkedin.com/" target="_blank"><img src="/images/icons/linkedin-logo-fill.svg" 
+        alt="LinkedIn profile."/></a>
 
-  <div class="links">
-    <div class="button">
-      <img class="thumbnail" src="images/icons/github-logo-duotone.svg" alt="Github">
-      <a class="text-md" href="https://github.com/vvramos" target="_blank">Github</a>
+      <a href="https://x.com/" target="_blank"><img src="/images/icons/twitter-logo-fill.svg" 
+        alt="Twitter profile."/></a>
+
+      <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram-logo-fill.svg" 
+        alt="Instagram profile."/></a>
+
+      <a href="mailto:vivianalizramos@gmail.com" target="_blank"><img src="/images/icons/envelope-fill.svg" alt="Email."/></a>
     </div>
-    <div class="button">
-      <img class="thumbnail"  src="images/icons/dev-to-duotone.svg" alt="Blog">
-      <a class="text-md" href="https://dev.to/vvramos" target="_blank">My Blog</a>
-    </div>
-    <div class="button">
-      <img class="thumbnail"  src="images/icons/cat-duotone.svg" alt="Cat photos">
-      <a class="text-md" href="https://imgur.com/a/dfKg1wH" target="_blank">My Cats</a>
-    </div>
-    <div class="button">
-      <img class="thumbnail" 
-       src="images/icons/spotify-logo-duotone.svg" alt="Coding playlist">
-      <a class="text-md" href="https://open.spotify.com/user/tearfullittledietgirl" target="_blank">3AM Coding Playlist</a>
-    </div>
-    <div class="button">
-      <img class="thumbnail"  src="images/icons/music-note-duotone.svg" alt="Rate Your Music">
-      <a class="text-md" href="https://rateyourmusic.com/~vv_vv" target="_blank">Rate Your Music</a>
-    </div>
-    <div class="button">
-      <img class="thumbnail" src="images/icons/film-reel-duotone.svg" alt="Letterboxd">
-      <a class="text-md" href="https://letterboxd.com/vv__vv/" target="_blank">Letterboxd</a>
-    </div>
+
+      <div class="links">
+        <img class="thumbnail" src="images/icons/github-logo-duotone.svg" alt="Github">
+        <a class="text-md" href="https://github.com/vvramos" target="_blank">Github</a>
+      </div>
+      <div class="links">
+        <img class="thumbnail"  src="images/icons/dev-to-duotone.svg" alt="Blog">
+        <a class="text-md" href="https://dev.to/vvramos" target="_blank">My Blog</a>
+      </div>
+      <div class="links">
+        <img class="thumbnail"  src="images/icons/cat-duotone.svg" alt="Cat photos">
+        <a class="text-md" href="https://imgur.com/a/dfKg1wH" target="_blank">My Cats</a>
+      </div>
+
+      <div class="links">
+        <img class="thumbnail" 
+        src="images/icons/spotify-logo-duotone.svg" alt="Coding playlist">
+        <a class="text-md" href="https://open.spotify.com/user/tearfullittledietgirl" target="_blank">3AM Coding Playlist</a>
+      </div>
+
+      <div class="links">
+        <img class="thumbnail"  src="images/icons/music-note-duotone.svg" alt="Rate Your Music">
+        <a class="text-md" href="https://rateyourmusic.com/~vv_vv" target="_blank">Rate Your Music</a>
+      </div>
+
+      <div class="links">
+        <img class="thumbnail" src="images/icons/film-reel-duotone.svg" alt="Letterboxd">
+        <a class="text-md" href="https://letterboxd.com/vv__vv/" target="_blank">Letterboxd</a>
+      </div>
   </div>
 </body>
 </html>

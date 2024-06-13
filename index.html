@@ -1,131 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Link in Bio | Vivi Ramos</title>
-  
-  <style>
-    body {
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background-color: #004643;
-      display: flex;
-      justify-content: center;
-    }
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Link in Bio | Vivi Ramos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    .headshot {
-      width: 128px;
-      height: 128px;
-      object-fit: cover;
-      border-radius: 128px;
-    }
+  <body>
+    <div class="scrollContainer">
 
-    .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
-      object-fit: cover;
-    }
+      <nav class="navbar">
+        <div id="home" class="container">
 
-    .name {
-      color: #fffffe;
-      display: flex;
-      justify-content: center;
-    }
+          <div id="name">
+            <h1 class="text-xl">Vivi Ramos</h1>
+          </div>
 
-    .small-icons a {
-      color: #fffffe;
-      text-decoration: none;
-      padding: 5px;
-    }
+          <div class="menu">
+            <ul>
+              <li>
+                <a class="text-md" href="#about">about</a>
+              </li>
+              <li>
+                <a class="text-md" href="#portfolio">portfolio</a>
+              </li>
+              <li>
+                <a class="text-md" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
 
-    .links {
-      background-color: #f9bc60;
-      display: flex;
-      align-items: center;
-      padding: 5px;
-    }
+        </div>
+      </nav>
 
-    .links a {
-      color: #001e1d;
-      text-decoration: none;
-      text-align: center;
-      flex-grow: 1;
-    }
+      <!--homepage start-->
+      <section id="home">
+        <div class="container">
 
-    .items {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 640px;
-      flex-grow: 1;
-    }
+          <div class="headshot-column">
+            <div class="headshot">
+              <img src="./images/ViviRamos.jpg" alt="Photo of Vivi Ramos">
+            </div>
 
-    .banner {
-      display: flex;
-      justify-content: center;
-    }
+            <div class="sm-icons">
+              <a href="https://www.linkedin.com/" target="_blank"><img src="/images/icons/linkedin-logo-fill.svg" alt="LinkedIn profile."/></a>
 
-    .social-icons {
-      display: flex;
-      justify-content: space-around;
-    }
-  </style>    
-  
-</head>
-<body>
-  <div class ="items">
-    <div class="banner">
-      <img class="headshot" src="images/ViviRamos.jpg" alt="Vivi Ramos headshot">
+              <a href="https://x.com/" target="_blank"><img src="/images/icons/twitter-logo-fill.svg" 
+                alt="Twitter profile."/></a>
+
+              <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram-logo-fill.svg" alt="Instagram profile."/></a>
+
+              <a href="mailto:vivianalizramos@gmail.com"><img src="/images/icons/envelope-fill.svg" alt="Email."/></a>
+            </div>
+          </div>
+
+          <div class="links-column">
+            <div class="button">
+                <img src="images/icons/github-logo-duotone.svg" alt="Github">
+                <a class="text-md" href="https://github.com/vvramos" target="_blank">Github</a>
+            </div>
+
+            <div class="button">
+                <img src="images/icons/dev-to-duotone.svg" alt="Blog">
+                <a class="text-md" href="https://dev.to/vvramos" target="_blank">My Blog</a>
+            </div>
+
+            <div class="button">
+                <img src="images/icons/cat-duotone.svg" alt="Cat photos">
+                <a class="text-md" href="https://imgur.com/a/dfKg1wH" target="_blank">My Cats</a>
+            </div>
+
+            <div class="button">
+                <img src="images/icons/spotify-logo-duotone.svg" alt="Coding playlist">
+                <a class="text-md" href="https://open.spotify.com/user/tearfullittledietgirl"
+                target="_blank">3AM Coding Playlist</a>
+            </div>
+
+            <div class="button">
+                <img src="images/icons/music-note-duotone.svg" alt="Rate Your Music">
+                <a class="text-md" href="https://rateyourmusic.com/~vv_vv" 
+                target="_blank">Rate Your Music</a>
+            </div>
+
+            <div class="button">
+                <img src="images/icons/film-reel-duotone.svg" alt="Letterboxd">
+                <a class="text-md" href="https://letterboxd.com/vv__vv/" 
+                target="_blank">Letterboxd</a>
+            </div>
+          </div> 
+
+        </div>
+      </section>
+
     </div>
-
-    <div class="name">
-      Vivi Ramos
-    </div>
-
-    <div class="small-icons">
-      <a href="https://www.linkedin.com/" target="_blank"><img src="/images/icons/linkedin-logo-fill.svg" 
-        alt="LinkedIn profile."/></a>
-
-      <a href="https://x.com/" target="_blank"><img src="/images/icons/twitter-logo-fill.svg" 
-        alt="Twitter profile."/></a>
-
-      <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram-logo-fill.svg" 
-        alt="Instagram profile."/></a>
-
-      <a href="mailto:vivianalizramos@gmail.com" target="_blank"><img src="/images/icons/envelope-fill.svg" alt="Email."/></a>
-    </div>
-
-      <div class="links">
-        <img class="thumbnail" src="images/icons/github-logo-duotone.svg" alt="Github">
-        <a class="text-md" href="https://github.com/vvramos" target="_blank">Github</a>
-      </div>
-      <div class="links">
-        <img class="thumbnail"  src="images/icons/dev-to-duotone.svg" alt="Blog">
-        <a class="text-md" href="https://dev.to/vvramos" target="_blank">My Blog</a>
-      </div>
-      <div class="links">
-        <img class="thumbnail"  src="images/icons/cat-duotone.svg" alt="Cat photos">
-        <a class="text-md" href="https://imgur.com/a/dfKg1wH" target="_blank">My Cats</a>
-      </div>
-
-      <div class="links">
-        <img class="thumbnail" 
-        src="images/icons/spotify-logo-duotone.svg" alt="Coding playlist">
-        <a class="text-md" href="https://open.spotify.com/user/tearfullittledietgirl" target="_blank">3AM Coding Playlist</a>
-      </div>
-
-      <div class="links">
-        <img class="thumbnail"  src="images/icons/music-note-duotone.svg" alt="Rate Your Music">
-        <a class="text-md" href="https://rateyourmusic.com/~vv_vv" target="_blank">Rate Your Music</a>
-      </div>
-
-      <div class="links">
-        <img class="thumbnail" src="images/icons/film-reel-duotone.svg" alt="Letterboxd">
-        <a class="text-md" href="https://letterboxd.com/vv__vv/" target="_blank">Letterboxd</a>
-      </div>
-  </div>
-</body>
+  </body>
 </html>
